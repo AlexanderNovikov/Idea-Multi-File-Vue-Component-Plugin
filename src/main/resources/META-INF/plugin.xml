@@ -1,0 +1,18 @@
+<idea-plugin>
+    <id>com.novikovav.multi_file_vue_component</id>
+    <name>Create multi file Vue component</name>
+    <vendor email="a@novikovav.com" url="http://novikovav.com">NovikovAV</vendor>
+
+    <description>Plugin that helps to create multi file Vue component (vue, html, script(js) and style(css))</description>
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+    </extensions>
+
+    <actions>
+        <action id="ToolsMenu.CreateVueFileComponent" class="com.novikovav.multi_file_vue_component.CreateAction"
+                text="Vue Component (Multi File)" description="Creates multi file Vue component" icon="/icons/vue.png">
+            <add-to-group group-id="NewGroup" anchor="last"/>
+        </action>
+    </actions>
+</idea-plugin>
